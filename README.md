@@ -2,7 +2,7 @@
 ## 1. 概要
 引数で指定した画像の左右反転を作成するpython3で動作するプログラムです。
 ## 2. ソースコード
-‵‵‵python
+```python
 #このプログラムはpython3用です。
 #あらかじめ　piz install pillow でpillow　をインストールしておきます。
 from PIL import Image
@@ -20,18 +20,18 @@ img_flip = img.transpose(Image.FLIP_LEFT_RIGHT)
 
 # 画像の保存
 img_flip.save(output_image)
-‵‵‵
+```
 ## 3.使い方
 **3.1.実行例**
 ・コマンドラインフォーマット
-‵‵‵python
+```python
 python3 flip.py<input_image_path><output_image_path>
-‵‵‵
+```
 
 ・利用例
-‵‵‵python
+```python
 python3 flip.py input.jpg output.jpg
-‵‵‵
+```
 **3.2出力結果**
 ・以下のように入力画像の左右反転画像が出力されます。
 |入力画像(input.jpg)|出力画像(output.jpg)|
