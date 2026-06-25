@@ -1,8 +1,8 @@
-#左右反転画像 生成プログラムflop.py
-##1.概要
+# 左右反転画像 生成プログラムflop.py
+## 1. 概要
 引数で指定した画像の左右反転を作成するpython3で動作するプログラムです。
-##2.ソースコード
-‵‵‵python3
+## 2. ソースコード
+‵‵‵python
 #このプログラムはpython3用です。
 #あらかじめ　piz install pillow でpillow　をインストールしておきます。
 from PIL import Image
@@ -18,13 +18,13 @@ img = Image.open(input_image)
 #画像の左右反転
 img_flip = img.transpose(Image.FLIP_LEFT_RIGHT)
 
-#画像の保存
+# 画像の保存
 img_flip.save(output_image)
 ‵‵‵
-##3.使い方
+## 3.使い方
 **3.1.実行例**
 ・コマンドラインフォーマット
-‵‵‵python3
+‵‵‵python
 python3 flip.py<input_image_path><output_image_path>
 ‵‵‵
 
