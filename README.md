@@ -4,7 +4,7 @@
 ## 2. ソースコード
 ```python
 #このプログラムはpython3用です。
-#あらかじめ　piz install pillow でpillow　をインストールしておきます。
+#あらかじめ　pil install pillow でpillow　をインストールしておきます。
 from PIL import Image
 import sys
 
@@ -25,7 +25,7 @@ img_flip.save(output_image)
 **3.1.実行例**
 - コマンドラインフォーマット
 ```python
-python3 flip.py<input_image_path><output_image_path>
+python3 flip.py<input_image_path> <output_image_path>
 ```
 
 - 利用例
